@@ -1,0 +1,27 @@
+[package]
+name = "boxpop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-tempfile = "0.6.0"
+clap = { version = "4.5.20", features = ["derive", "env"] }
+color-eyre = "0.6.3"
+console = "0.15.8"
+derive_more = { version = "1.0.0", features = ["full"] }
+docker-api = { version = "0.14.0", features = ["tls"] }
+error_set = { version = "0.7.0", features = ["tracing"] }
+flume = "0.11.1"
+futures = "0.3.31"
+indicatif = { version = "0.17.9", features = ["improved_unicode", "tokio"] }
+miette = { version = "7.2.0", features = ["fancy"] }
+nutype = "0.5.0"
+oci-client = "0.14.0"
+scopeguard = "1.2.0"
+tempfile = "3.14.0"
+thiserror = "2.0.3"
+tokio = { version = "1.41.0", features = ["full"] }
+tokio-util = { version = "0.7.12", features = ["full"] }
+tracing = "0.1.40"
+tracing-error = "0.2.0"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
